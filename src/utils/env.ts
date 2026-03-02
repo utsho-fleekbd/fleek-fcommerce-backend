@@ -5,7 +5,8 @@ dotenv.config();
 
 
 const envSchema = z.object({
-    PORT: z.string()
+    PORT: z.string(),
+    DATABASE_URL: z.string(),
 })
 
 const env = envSchema.parse(process.env);
